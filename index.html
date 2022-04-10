@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation using RegEx</title>
+</head>
+
+<body>
+    <div onclick="show()" id="about" >Log in &rarr;</div>
+    <form autocomplete="off" novalidate id="form">
+        <div id="fname" class="fErr">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="example123">
+            <br><small id="nameErr" class="err">Username must be 2-15 characters long and must start with letter and
+                with number</small><br>
+        </div>
+        <div id="fPhone" class="fErr">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="enter your 10 digit no">
+            <br><small id="phoneErr" class="err">Your phone number must be 10 digit long</small><br>
+        </div>
+        <div id="fEmail" class="fErr">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="name@example.com">
+            <br><small id="emailErr" class="err">Your email must be valid</small><br>
+        </div>
+        <div id="fPassword" class="fErr">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your password">
+            <br><small id="passwordErr" class="err">Password must contain a Special character and a Number</small><br>
+        </div>
+        <div id="container" onclick="butt()"><button type="button" id="buttonn">
+                <p id="sbmt">Submit</p>
+                <p id="arr">&#8611;</p>
+                <p id="done">Submitted&check;</p>
+            </button></div>
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
